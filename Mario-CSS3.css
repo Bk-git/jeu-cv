@@ -26,20 +26,35 @@ body {
 #toad {
   position: absolute;
   overflow: hidden;
-  width: 125px;
-  height: 78px;
-  top: 23px;
-  left: 230px;
+  width: 107px;
+  height: 69px;
+  top: 37px;
+  left: 223px;
 }
 
 #Etoile {
   position: absolute;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
-  top: 10px;
-  left: 328px;
+  width: 83px;
+  height: 83px;
+  top: 29px;
+  left: 317px;
 }
+#logoGithub {
+  position: absolute;
+  left: 163px;
+  width: 73px;
+  height: 73px;
+  top: 37px;
+}
+
+#gitcvdl {
+  position: absolute;
+  top: 2px;
+  width: 17%;
+  left: 10%;
+}
+
 /* sprite de Mario */
 #contenu {
   position: absolute;
@@ -95,21 +110,22 @@ body {
 
 #iDscore {
   /*border: 1px black solid;*/
+  /* border: 1px black solid; */
   position: absolute;
   overflow: hidden;
   display: inline-block;
   width: 291px;
   height: 40px;
-  top: 129px;
-  left: 228px;
+  top: 6px;
+  left: 7px;
 }
 /* Point de vie de Mario */
 #vieMario1,
 #vieMario2,
 #vieMario3,
 #vieMario4 {
-  width: 40px;
-  height: 40px;
+  width: 31px;
+  height: 33px;
 }
 #divGameOver {
   width: 1000px;
@@ -278,12 +294,4 @@ body {
   top: 570px;
   left: 285px;
   border: 1px black;
-}
-
-#logoGithub {
-  position: absolute;
-  left: 166px;
-  width: 84px;
-  height: 84px;
-  top: 21px;
 }
