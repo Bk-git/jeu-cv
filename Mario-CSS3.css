@@ -1,0 +1,289 @@
+body {
+  background-image: url("backgroundMario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  width: 100%;
+  margin: 0;
+}
+#zone-de-jeu {
+  background-image: url(fond-jeux.gif);
+  width: 1000px;
+  margin: auto;
+  height: 391px;
+  /* border: 1px black solid; */
+  position: relative;
+  z-index: 1;
+  margin-top: 13%;
+}
+#monCv {
+  background-image: url("MonCv.pdf");
+  width: 200px;
+  margin: 200px auto;
+  height: 200px;
+  position: relative;
+}
+#toad {
+  position: absolute;
+  overflow: hidden;
+  width: 125px;
+  height: 78px;
+  top: 23px;
+  left: 230px;
+}
+
+#Etoile {
+  position: absolute;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 328px;
+}
+/* sprite de Mario */
+#contenu {
+  position: absolute;
+  overflow: hidden;
+  top: -47px;
+  left: -210px;
+}
+/* masque de Mario */
+#container {
+  /* masque */
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  /* border: 1px black solid;*/
+  height: 44px;
+  /* top: 321px;
+    left: 0px; */
+  /*animation: bouge 0.2s 0s 1 alternate ease-out*/
+}
+
+@keyframes saut {
+  0% {
+    top: 321px;
+    /* coordonnées de départ du saut */
+  }
+  50% {
+    top: 240px;
+  }
+  100% {
+    top: 321px;
+    /* coordonnées final du saut */
+  }
+}
+
+#MasqueDeBowser {
+  position: absolute;
+  overflow: hidden;
+  width: 68px;
+  height: 50px;
+  top: 302px;
+  left: 766px;
+  /* border: 1px black solid;*/
+}
+
+#spriteBowser {
+  left: -17px;
+  position: absolute;
+  overflow: hidden;
+  width: 1092px;
+  height: 2024px;
+  top: -97px;
+}
+
+#iDscore {
+  /*border: 1px black solid;*/
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  top: 129px;
+  left: 228px;
+}
+/* Point de vie de Mario */
+#vieMario1,
+#vieMario2,
+#vieMario3,
+#vieMario4 {
+  width: 40px;
+  height: 40px;
+}
+#divGameOver {
+  width: 1000px;
+  margin: 160px auto;
+  height: 391px;
+  /* border: 1px black solid;*/
+  position: absolute;
+  display: none;
+  z-index: 2;
+  left: 154px;
+}
+
+#gameOver {
+  top: -160px;
+  left: -154px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#buttonRestart {
+  position: absolute;
+  width: 100px;
+  left: 441px;
+  cursor: pointer;
+  z-index: 3;
+  left: 294px;
+}
+
+#divRecupDiversLogo {
+  top: 581px;
+  position: absolute;
+  display: inline-block;
+  display: flex;
+}
+
+#recuPlogoHtml5 {
+  display: none;
+  width: 96px;
+  height: 94px;
+}
+#MasqueDuLogoHTML5 {
+  position: absolute;
+  overflow: hidden;
+  width: 1000px;
+  height: 1000px;
+}
+
+#logoHTML5 {
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  top: 238px;
+  left: 225px;
+  /*animation: deplacement 0.2s 0s 1 alternate ease-out ;*/
+}
+/* Deplacement du logoHTML5 */
+@keyframes deplacementDuLogoHTML5 {
+  0% {
+    top: 236px;
+    /* coordonnées de départ du logo */
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 236px;
+    /* coordonnées final du logo */
+  }
+}
+
+#MasqueDuLogoCSS3 {
+  position: absolute;
+  overflow: hidden;
+  width: 1000px;
+  height: 1000px;
+}
+
+#logoCSS3 {
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  top: 138px;
+  left: 373px;
+  /*animation: deplacementDulogoCSS3 0.8s 0s 1 alternate ease-out;*/
+}
+
+@keyframes deplacementDulogoCSS3 {
+  0% {
+    top: 80px;
+    /* coordonnées de départ du logo */
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 236px;
+    /* coordonnées final du logo */
+  }
+}
+
+#recuPlogoCSS3 {
+  width: 84px;
+  display: none;
+  height: 84px;
+}
+
+#MasqueDuLogoJS {
+  position: absolute;
+  overflow: hidden;
+  width: 1000px;
+  height: 1000px;
+}
+
+#logoJS {
+  position: absolute;
+  overflow: hidden;
+  width: 56px;
+  height: 45px;
+  top: 180px;
+  left: 607px;
+  /*animation: deplacementDulogoCSS3 0.8s 0s 1 alternate ease-out;*/
+}
+
+#recuPlogoJS {
+  width: 120px;
+  display: none;
+  height: 107px;
+}
+
+@keyframes deplacementDulogoJS {
+  0% {
+    top: 1px;
+    /* coordonnées de départ du logo */
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 236px;
+    /* coordonnées final du logo */
+  }
+}
+
+#youWin {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+#son {
+  top: 0px;
+  left: 1140px;
+  position: absolute;
+}
+
+#keybordGame {
+  position: absolute;
+  width: 60%;
+  height: 10%;
+  top: 570px;
+  left: 285px;
+  border: 1px black;
+}
+
+#logoGithub {
+  position: absolute;
+  left: 166px;
+  width: 84px;
+  height: 84px;
+  top: 21px;
+}
