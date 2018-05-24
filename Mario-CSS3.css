@@ -10,7 +10,7 @@ body {
   background-image: url(fond-jeux.gif);
   width: 1000px;
   margin: auto;
-  height: 391px;
+  height: 390px;
   /* border: 1px black solid; */
   position: relative;
   z-index: 1;
@@ -40,12 +40,21 @@ body {
   top: 29px;
   left: 317px;
 }
+
+#Etoile:hover {
+  /* background-color: blue; */
+  filter: drop-shadow(0 0 6px black);
+}
 #logoGithub {
   position: absolute;
   left: 163px;
   width: 73px;
   height: 73px;
   top: 37px;
+}
+
+#logoGithub:hover {
+  filter: drop-shadow(0 0 3px black);
 }
 
 #gitcvdl {
@@ -289,9 +298,9 @@ body {
 
 #keybordGame {
   position: absolute;
-  width: 60%;
-  height: 10%;
-  top: 570px;
-  left: 285px;
-  border: 1px black;
+  width: 35%;
+  height: 30%;
+  top: 556px;
+  left: 455px;
+  filter: drop-shadow(0 0 100px black);
 }
