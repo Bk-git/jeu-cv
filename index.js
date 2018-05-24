@@ -162,7 +162,20 @@ window.addEventListener("DOMContentLoaded", function() {
       masqueX = masqueX + deplacementDroit; // + par rapport a left
       masqueContainer.style.left = masqueX + "px";
     }
+    // var tuberVert = {
+    //     width: 50,
+    //     heigth: 50,
+    //     top: 321,
+    //     left: 616
+    //   };
 
+    //   if (masqueContainer.offsetLeft == tuberVert.left) {
+    //     masqueX = masqueX + deplacementOff; // + par rapport a left
+    //     masqueContainer.style.left = masqueX + "px";
+    //   } else {
+    //     masqueX = masqueX + deplacementDroit; // + par rapport a left
+    //     masqueContainer.style.left = masqueX + "px";
+    //   }
     // mouvement Sprite
     if (k == 0) {
       spriteContenu.style.top = "-48px";

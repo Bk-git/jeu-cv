@@ -26,18 +26,21 @@ body {
 #toad {
   position: absolute;
   overflow: hidden;
-  width: 107px;
+  width: 80px;
   height: 69px;
-  top: 37px;
-  left: 223px;
+  top: 60px;
+  left: 238px;
 }
-
+#toad:hover {
+  /* background-color: blue; */
+  filter: drop-shadow(0 0 6px black);
+}
 #Etoile {
   position: absolute;
   overflow: hidden;
   width: 83px;
   height: 83px;
-  top: 29px;
+  top: 57px;
   left: 317px;
 }
 
@@ -50,7 +53,7 @@ body {
   left: 163px;
   width: 73px;
   height: 73px;
-  top: 37px;
+  top: 60px;
 }
 
 #logoGithub:hover {
@@ -59,9 +62,9 @@ body {
 
 #gitcvdl {
   position: absolute;
-  top: 2px;
+  top: 30px;
   width: 17%;
-  left: 10%;
+  left: 11%;
 }
 
 /* sprite de Mario */
