@@ -24,36 +24,37 @@ body {
   position: relative;
 }
 #toad {
-  position: absolute;
-  overflow: hidden;
-  width: 80px;
-  height: 69px;
-  top: 60px;
-  left: 238px;
+ position: absolute;
+    overflow: hidden;
+    width: 80px;
+    height: 94px;
+    top: 60px;
+    left: 238px;
 }
 #toad:hover {
   /* background-color: blue; */
   filter: drop-shadow(0 0 6px black);
 }
 #Etoile {
-  position: absolute;
-  overflow: hidden;
-  width: 83px;
-  height: 83px;
-  top: 57px;
-  left: 317px;
+    position: absolute;
+    overflow: hidden;
+    width: 102px;
+    height: 102px;
+    top: 57px;
+    left: 317px;
 }
 
 #Etoile:hover {
   /* background-color: blue; */
   filter: drop-shadow(0 0 6px black);
 }
+
 #logoGithub {
-  position: absolute;
-  left: 163px;
-  width: 73px;
-  height: 73px;
-  top: 60px;
+    position: absolute;
+    left: 131px;
+    width: 100px;
+    height: 103px;
+    top: 60px;
 }
 
 #logoGithub:hover {
@@ -305,5 +306,6 @@ body {
   height: 30%;
   top: 556px;
   left: 455px;
-  filter: drop-shadow(0 0 100px black);
+  filter: drop-shadow(0 0 10px red);
 }
+
