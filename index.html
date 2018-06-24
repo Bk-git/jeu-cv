@@ -7,15 +7,31 @@
 
 
   <link rel="stylesheet" href="Mario-CSS3.css">
+  <link rel="stylesheet" href="Luigi-CSS3.css">
   <script src="index.js"></script>
   <script src="indexEnnemi.js"></script>
   <script src="restart.js"></script>
+  <script src="indexLuigi.js"></script>
 </head>
 
 <body>
-  <audio src="OverWorldMario.mp3" controls loop id="son">
+  <audio src="OverWorldMario.mp3" controls loop id="son"></audio>
 
-  </audio>
+  <div id='zone-de-Menu'>
+    <title>Choix du Personnage</title>
+    <h1 id="monH1Menu"> Start the game with mario or luigi</h1>
+    <img src="luigi-jumping.png" id="choixPersonnageLuigi">
+    <img src="mario-jumping.png" id="choixPersonnageMario">
+  </div>
+
+  <!-- <script> var myFunction = function () {
+      document.getElementById("choixPersonnageLuigi").innerHTML =
+        console.log("Hello World");
+      console.log("salut");
+
+
+    } -->
+  <!-- </script> -->
 
 
 
@@ -80,6 +96,11 @@
 
     <div id="container" class="masque">
       <img src="Sprite-Mario-Luigi-Yoshi.gif" id="contenu" class="sprite" />
+    </div>
+
+
+    <div id="containerLuigi" class="masqueLuigi">
+      <img src="luigi.png" id="contenuLuigi" class="spriteLuigi" />
     </div>
 
     <div id="MasqueDeBowser">

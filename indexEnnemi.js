@@ -1,6 +1,6 @@
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   var test = false;
-  var MouvementSpriteBowser = function() {
+  var MouvementSpriteBowser = function () {
     var masqueDeBowser = document.getElementById("MasqueDeBowser");
     var maZoneDeJeu = document.getElementById("zone-de-jeu");
     var spriteBowser = document.getElementById("spriteBowser");
@@ -85,13 +85,13 @@ window.addEventListener("DOMContentLoaded", function() {
     var score = 0;
     //var cantTouch = true;
 
-    this.mouvementBowserXY = function() {
+    this.mouvementBowserXY = function () {
       // Position Bowser
       if (
         changementDeSens === false &&
         masqueDeBowser.offsetLeft > limiteZoneDeJeuGauche &&
         masqueDeBowser.offsetLeft <
-          maZoneDeJeu.clientWidth - masqueDeBowser.clientWidth // M + sa largeur
+        maZoneDeJeu.clientWidth - masqueDeBowser.clientWidth // M + sa largeur
       ) {
         masqueBowserX = masqueBowserX - deplacement;
         masqueDeBowser.style.left = masqueBowserX + "px";
@@ -147,7 +147,7 @@ window.addEventListener("DOMContentLoaded", function() {
         console.log("collision");
         test = true;
 
-        // Point de Vie de Mario ("4 coeur")
+        // Point de Vie de Mario ("4 coeurs")
         score++;
         if (score == 1) {
           vie1 = document.getElementById("vieMario1");
@@ -163,11 +163,50 @@ window.addEventListener("DOMContentLoaded", function() {
           vie4.style.display = "none";
           gameOver = document.getElementById("divGameOver");
           gameOver.style.display = "block";
+
         }
       }
+
+
+
+
+      //collision;
+      var containerLuigi = document.getElementById("containerLuigi");
+      var spriteContenuLuigi = document.getElementById("contenuLuigi");
+      if (
+        containerLuigi.offsetLeft + 20 >= masqueDeBowser.offsetLeft &&
+        containerLuigi.offsetLeft - 60 <= masqueDeBowser.offsetLeft &&
+        containerLuigi.offsetTop >= 320
+      ) {
+        //alert("");
+        console.log("collision");
+        test = true;
+
+        // Point de Vie de Luigi ("4 coeurs")
+        score++;
+        if (score == 1) {
+          vie1 = document.getElementById("vieMario1");
+          vie1.style.display = "none"; // Masque l'image
+        } else if (score == 10) {
+          vie2 = document.getElementById("vieMario2");
+          vie2.style.display = "none";
+        } else if (score == 20) {
+          vie3 = document.getElementById("vieMario3");
+          vie3.style.display = "none";
+        } else if (score == 30) {
+          vie4 = document.getElementById("vieMario4");
+          vie4.style.display = "none";
+          gameOver = document.getElementById("divGameOver");
+          gameOver.style.display = "block";
+
+        }
+      }
+
+
+
       //restart;
       buttonRestart = document.getElementById("buttonRestart");
-      buttonRestart.addEventListener("click", function() {
+      buttonRestart.addEventListener("click", function () {
         // ici window.location.reload() sert à rafraichir ma page
         window.location.reload();
         //cela m'évite donc d'initialiser les changements manuellement
@@ -196,5 +235,12 @@ window.addEventListener("DOMContentLoaded", function() {
 
   var bowser = new MouvementSpriteBowser();
 
-  testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement
+  testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement // 
+
+  if (buttonRestart) {
+
+  }
+
+
+
 });

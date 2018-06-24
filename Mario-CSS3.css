@@ -6,6 +6,70 @@ body {
   width: 100%;
   margin: 0;
 }
+
+
+/* #zone-de-MenuChoixUtilisateur {
+  background-image: url(fond-jeux.gif);
+  width: 1000px;
+  margin: auto;
+  height: 390px;
+  border: 1px black solid;
+  position: relative;
+  z-index: 1;
+  margin-top: 13%;
+} */
+
+#zone-de-Menu {
+  /* background-image: url(fond-jeux.gif); */
+  background-color: rgb(0, 132, 255);
+  width: 1000px;
+  margin: auto;
+  height: 390px;
+  /* border: 1px black solid; */
+  position: relative;
+  z-index: 1;
+  margin-top: 13%;
+    filter: drop-shadow(0 0 6px black);
+
+}
+
+#monH1Menu{
+  color:brown;
+  position:absolute;
+
+  left:270px;
+  
+}
+
+#choixPersonnageMario{
+    position: absolute;
+    top: 135px;
+    left: 204px;
+    width: 24%;
+    height: 42%;
+      /* filter: drop-shadow(0 0 6px black); */
+
+}
+#choixPersonnageMario:hover{
+    filter: drop-shadow(0 0 6px black);
+
+}
+
+#choixPersonnageLuigi{
+ position: absolute;
+    top: 132px;
+    left: 541px;
+    height: 43%;
+    width: 20%;
+      /* filter: drop-shadow(0 0 6px black); */
+
+
+}
+#choixPersonnageLuigi:hover {
+  /* background-color: blue; */
+  filter: drop-shadow(0 0 6px black);
+}
+
 #zone-de-jeu {
   background-image: url(fond-jeux.gif);
   width: 1000px;
