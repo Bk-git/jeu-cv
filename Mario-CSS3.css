@@ -79,6 +79,7 @@ body {
   position: relative;
   z-index: 1;
   margin-top: 13%;
+  display: none;
 }
 #monCv {
   background-image: url("MonCv.pdf");
@@ -147,6 +148,7 @@ body {
   width: 40px;
   /* border: 1px black solid;*/
   height: 44px;
+  
   /* top: 321px;
     left: 0px; */
   /*animation: bouge 0.2s 0s 1 alternate ease-out*/

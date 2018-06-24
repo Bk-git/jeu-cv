@@ -11,6 +11,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
   function Mario() {
+    var maZoneDeJeu = document.getElementById("zone-de-jeu")
+    maZoneDeJeu.style.display = "block";
     zoneDuMenu.style.display = "none";
 
     containerLuigi.style.display = "none"
@@ -364,7 +366,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function myFunction() {
     var masqueContainer = document.getElementById("container");
+    var maZoneDeJeu = document.getElementById("zone-de-jeu")
     zoneDuMenu.style.display = "none";
+    maZoneDeJeu.style.display = "block";
     masqueContainer.style.display = "none";
 
     document.getElementById("choixPersonnageLuigi").innerHTML = console.log('coucou Luigi')

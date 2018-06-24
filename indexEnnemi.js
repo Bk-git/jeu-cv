@@ -235,11 +235,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
   var bowser = new MouvementSpriteBowser();
 
+  var containerLuigi = document.getElementById("containerLuigi")
+  var container = document.getElementById("container")
+
+
+  
+  
   testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement // 
 
-  if (buttonRestart) {
 
-  }
 
 
 
