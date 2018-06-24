@@ -1,0 +1,54 @@
+/* sprite de Luigi */
+#contenuLuigi{
+  position: absolute;
+  overflow: hidden;
+     top: -114px;
+    left: -221px;
+}
+/* masque de Luigi */
+#containerLuigi{
+  /* masque */
+  position: absolute;
+  overflow: hidden;
+  width: 36px;
+  /* border: 1px black solid; */
+  height: 40px;
+  /* top: 320px;
+    left: 0px; */
+  /* animation: bouge 0.2s 0s 1 alternate ease-out */
+}
+
+
+@keyframes sautLuigi {
+  0% {
+    top: 321px;
+    /* coordonnées de départ du saut */
+  }
+  50% {
+    top: 240px;
+  }
+  100% {
+    top: 321px;
+    /* coordonnées final du saut */
+  }
+}
+
+/* #iDscoreLuigi { */
+  /*border: 1px black solid;*/
+  /* border: 1px black solid; */
+  /* position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  width: 291px;
+  height: 40px;
+  top: 6px;
+  left: 7px;
+} */
+/* Point de vie de Mario */
+/* #vieLuigi1,
+#vieLuigi2,
+#vieLuigi3,
+#vieLuigi4 {
+  width: 31px;
+  height: 33px;
+} */
