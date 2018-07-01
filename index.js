@@ -591,21 +591,21 @@ window.addEventListener("DOMContentLoaded", function () {
       return l;
     };
 
-    var toucheEntrer = function (m) {
-      if (m == 0) {
-        spriteContenuLuigi.style.top = "-332px";
-        spriteContenuLuigi.style.left = "-341px";
-      }
-      if (m == 1) {
-        spriteContenuLuigi.style.top = "-291px";
-        spriteContenuLuigi.style.left = "-366px";
-      }
-      m++;
-      if (m > 1) {
-        m = 0;
-      }
-      return m;
-    };
+    // var toucheEntrer = function (m) {
+    //   if (m == 0) {
+    //     spriteContenuLuigi.style.top = "-332px";
+    //     spriteContenuLuigi.style.left = "-341px";
+    //   }
+    //   if (m == 1) {
+    //     spriteContenuLuigi.style.top = "-291px";
+    //     spriteContenuLuigi.style.left = "-366px";
+    //   }
+    //   m++;
+    //   if (m > 1) {
+    //     m = 0;
+    //   }
+    //   return m;
+    // };
 
     window.onkeydown = function (event) {
       //  Quand la touche est  enfoncée
@@ -628,7 +628,7 @@ window.addEventListener("DOMContentLoaded", function () {
           basEnfoncee = true;
           break;
         case 13: // touche entrer
-          m = toucheEntrer(m);
+          // m = toucheEntrer(m);
           break;
         case 32: // touche espace
           //espaceEnfonce = true;
