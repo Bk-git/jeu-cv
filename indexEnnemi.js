@@ -239,8 +239,8 @@ window.addEventListener("DOMContentLoaded", function () {
   var container = document.getElementById("container")
 
 
-  
-  
+
+
   testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement // 
 
 

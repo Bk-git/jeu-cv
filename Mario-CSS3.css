@@ -34,12 +34,26 @@ body {
 }
 
 #monH1Menu{
-  color:brown;
+  /* color:brown; */
   position:absolute;
-
-  left:270px;
+  color: gold;
+  text-shadow: -5px -5px 5px black;
+  font-size: 50px ; 
+  left:120px;
   
 }
+
+/* body {
+  padding: 10px;
+  font-family: sans-serif;
+  background: linear-gradient(180deg, purple,white);
+
+  background-repeat: no-repeat;
+} */
+
+
+
+
 
 #choixPersonnageMario{
     position: absolute;
