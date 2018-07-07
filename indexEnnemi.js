@@ -54,6 +54,251 @@ window.addEventListener("DOMContentLoaded", function () {
           leftSprite: "-442px"
         },
         {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        }, {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        }, {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        }, {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        }, {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        }, {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-97px",
+          leftSprite: "-17px"
+        },
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-15px"
+        },
+
+        {
+          largeurDuMasque: "68px",
+          hauteurDuMasque: "50px",
+          topSprite: "-170px",
+          leftSprite: "-79px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-243px",
+          leftSprite: "-345px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-250px"
+        },
+        {
+          largeurDuMasque: "90px",
+          hauteurDuMasque: "49px",
+          topSprite: "-242px",
+          leftSprite: "-155px"
+        }, {
           largeurDuMasque: "90px",
           hauteurDuMasque: "49px",
           topSprite: "-243px",
