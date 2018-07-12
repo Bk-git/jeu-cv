@@ -1,20 +1,71 @@
 window.addEventListener("DOMContentLoaded", function () {
 
   var zoneDuMenu = document.getElementById('zone-de-Menu');
-  var Luigi = document.getElementById('choixPersonnageLuigi');
-  var mario = document.getElementById('choixPesonnageMario');
-
 
   // Choix du personnage ici au click sur Mario 
   var clickMario = document.getElementById("choixPersonnageMario").addEventListener("click", Mario);
 
+  var SonMarioDead = document.getElementById('./10-mario-died.mp3');
+  var gestionSonPiece = function () {
+    var audio = new Audio("piece.wav");
+    vie1 = document.getElementById("vieMario1");
+    vie2 = document.getElementById("vieMario2");
+    vie3 = document.getElementById("vieMario3");
+    vie4 = document.getElementById("vieMario4");
 
+    // if (sautMario) {
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play();
+    // };
+  };
 
   function Mario() {
     var maZoneDeJeu = document.getElementById("zone-de-jeu")
     maZoneDeJeu.style.display = "block";
     zoneDuMenu.style.display = "none";
+    var setDefaultVolume = function (mute) {
+      // var SonMarioDead = document.getElementById('./10-mario-died.mp3');
+      var audio = new Audio("piece.wav");
+      audio.play();
+      if (mute) {
+        // sAmbiance.volume = 0.0;
+        // sRonflements.volume = 0.0;
+        // sWin.volume = 0.0;
+        // sLoose.volume = 0.0;
+        // sTictac.volume = 0.0;
+        // sLouper.volume = 0.0;
+        audio.volume = 0.0;
 
+      } else {
+        audio.volume = 0.3;
+        // sRonflements.volume = 0.5;
+        // sWin.volume = 0.3;
+        // sLoose.volume = 0.4;
+        // sTictac.volume = 0.8;
+        // sLouper.volume = 1.0;
+      }
+    }
+
+    /******************/
+    /***** SOUNDS *****/
+    /******************/
+
+    // setDefaultVolume(true);
+
+    // var toggleMute = function () {
+    //   if (mute) {
+    //     muteButton.src = '10-mario-died.mp3';
+    //     return mute = false;
+    //   } else {
+    //     muteButton.src = '10-mario-died.mp3';
+    //     return mute = true;
+    //   }
+    // };
+
+
+
+    // 
     containerLuigi.style.display = "none"
     document.getElementById("choixPersonnageMario").innerHTML = console.log('coucou')
     var maZoneDeJeu = document.getElementById("zone-de-jeu");
@@ -55,7 +106,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     var sautMario = function () {
       // console.log("saut");
-
+      // gestionSonSaut();
       masqueContainer.style.animation = "saut 0.5s 0s 1 alternate ease-out";
       var logoHTML = document.getElementById("logoHTML5");
       var affichageLogoHtml = document.getElementById("recuPlogoHtml5");
@@ -70,6 +121,8 @@ window.addEventListener("DOMContentLoaded", function () {
         // console.log("je recupere le logo HTML");
         affichageLogoHtml.style.display = "block";
         logoHTML.style.display = "none";
+        gestionSonPiece();
+
       }
 
       var logoCSS3 = document.getElementById("logoCSS3");
@@ -82,6 +135,8 @@ window.addEventListener("DOMContentLoaded", function () {
         // console.log("je recupere le logo CSS");
         affichageLogoCSS3.style.display = "block";
         logoCSS3.style.display = "none";
+        gestionSonPiece();
+
       }
 
       var logoJS = document.getElementById("logoJS");
@@ -95,6 +150,8 @@ window.addEventListener("DOMContentLoaded", function () {
         console.log("je recupere le logo JS");
         affichageLogoJS.style.display = "block";
         logoJS.style.display = "none";
+        gestionSonPiece();
+
       }
 
       // Apres recolte des logos , affichage du message "you win"
@@ -425,6 +482,8 @@ window.addEventListener("DOMContentLoaded", function () {
         // console.log("je recupere le logo HTML");
         affichageLogoHtml.style.display = "block";
         logoHTML.style.display = "none";
+        gestionSonPiece();
+
       }
 
       var logoCSS3 = document.getElementById("logoCSS3");
@@ -437,6 +496,8 @@ window.addEventListener("DOMContentLoaded", function () {
         // console.log("je recupere le logo CSS");
         affichageLogoCSS3.style.display = "block";
         logoCSS3.style.display = "none";
+        gestionSonPiece();
+
       }
 
       var logoJS = document.getElementById("logoJS");
@@ -450,6 +511,8 @@ window.addEventListener("DOMContentLoaded", function () {
         console.log("je recupere le logo JS");
         affichageLogoJS.style.display = "block";
         logoJS.style.display = "none";
+        gestionSonPiece();
+
       }
 
       // Apres recolte des logos , affichage du message "you win"
@@ -480,6 +543,13 @@ window.addEventListener("DOMContentLoaded", function () {
         vie4.style.display = "none";
         keybordGame = document.getElementById("keybordGame");
         keybordGame.style.display = "none";
+        var github = document.getElementById("logoGithub");
+        github.style.display = "block";
+        var Etoile = document.getElementById("Etoile");
+        Etoile.style.display = "block";
+        var toad = document.getElementById("toad");
+        toad.style.display = "block";
+
       }
     };
 
