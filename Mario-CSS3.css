@@ -1,5 +1,5 @@
 body {
-  background-image: url("backgroundMario.jpg");
+  background-image: url("./image/backgroundMario.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
@@ -96,7 +96,7 @@ body {
 
 
 #zone-de-jeu {
-  background-image: url(fond-jeux.gif);
+  background-image: url("./image/fond-jeux.gif");
   width: 1000px;
   margin: auto;
   height: 390px;
