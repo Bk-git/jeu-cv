@@ -89,6 +89,12 @@ body {
   filter: drop-shadow(0 0 6px black);
 }
 
+
+
+
+
+
+
 #zone-de-jeu {
   background-image: url(fond-jeux.gif);
   width: 1000px;
@@ -100,6 +106,12 @@ body {
   margin-top: 13%;
   display: none;
 }
+
+
+
+
+
+
 #monCv {
   background-image: url("MonCv.pdf");
   width: 200px;
@@ -385,12 +397,41 @@ body {
   position: absolute;
 }
 
-#keybordGame {
-  position: absolute;
-  width: 35%;
-  height: 30%;
-  top: 556px;
-  left: 455px;
-  filter: drop-shadow(0 0 10px red);
+h2{
+ position:absolute;
+  color: gold;
+  text-shadow: -5px -5px 5px black;
+  /* font-size: 25px ;  */
+  left:350px;
+  top:580px; 
+
+}
+#pcolor1 {
+  position:absolute;
+  color: gold;
+  text-shadow: -5px -5px 5px black;
+  /* font-size: 25px ;  */
+  left:300px;
+  top:630px; 
+  /* filter: drop-shadow(0 0 10px red); */
+  /* font-family: 'Press Start 2P', cursive; */
+
 }
 
+#pcolor2 {
+  position:absolute;
+  color: gold;
+  text-shadow: -5px -5px 5px black;
+  /* font-size: 25px ;  */
+  left:500px;
+  top:630px; 
+}
+
+#pcolor3 {
+  position:absolute;
+  color: gold;
+  text-shadow: -5px -5px 5px black;
+  /* font-size: 25px ;  */
+  left : 880px;
+  top:630px; 
+}
