@@ -408,7 +408,7 @@ h2{
 }
 #pcolor1 {
   position:absolute;
-  color: gold;
+  color: red;
   text-shadow: -5px -5px 5px black;
   /* font-size: 25px ;  */
   left:300px;
@@ -429,7 +429,7 @@ h2{
 
 #pcolor3 {
   position:absolute;
-  color: gold;
+  color: red;
   text-shadow: -5px -5px 5px black;
   /* font-size: 25px ;  */
   left : 880px;
