@@ -1,4 +1,13 @@
 window.addEventListener("DOMContentLoaded", function () {
+
+
+
+
+
+
+
+
+  
   var test = false;
   var MouvementSpriteBowser = function () {
     var masqueDeBowser = document.getElementById("MasqueDeBowser");

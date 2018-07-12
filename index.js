@@ -5,65 +5,39 @@ window.addEventListener("DOMContentLoaded", function () {
   // Choix du personnage ici au click sur Mario 
   var clickMario = document.getElementById("choixPersonnageMario").addEventListener("click", Mario);
 
-  var SonMarioDead = document.getElementById('./10-mario-died.mp3');
+
+  // var sonPrincipal = function () {
+  //   var audio1 = new Audio("OverWorldMario.mp3");
+  //   console.log('audioprincipale fonctionne')
+  //   audio1.pause();
+  //   // audio1.currentTime = 0;
+  //   // audio1.play();
+  // }
+
+
+  var gestionSonChoixMario = function () {
+
+    var audioChoixMario = new Audio("itsmeMario.mp3");
+    audioChoixMario.pause();
+    audioChoixMario.currentTime = 0;
+    audioChoixMario.play();
+  };
+
+
+
   var gestionSonPiece = function () {
     var audio = new Audio("piece.wav");
-    vie1 = document.getElementById("vieMario1");
-    vie2 = document.getElementById("vieMario2");
-    vie3 = document.getElementById("vieMario3");
-    vie4 = document.getElementById("vieMario4");
-
-    // if (sautMario) {
     audio.pause();
     audio.currentTime = 0;
     audio.play();
-    // };
   };
 
   function Mario() {
+    gestionSonChoixMario();
+
     var maZoneDeJeu = document.getElementById("zone-de-jeu")
     maZoneDeJeu.style.display = "block";
     zoneDuMenu.style.display = "none";
-    var setDefaultVolume = function (mute) {
-      // var SonMarioDead = document.getElementById('./10-mario-died.mp3');
-      var audio = new Audio("piece.wav");
-      audio.play();
-      if (mute) {
-        // sAmbiance.volume = 0.0;
-        // sRonflements.volume = 0.0;
-        // sWin.volume = 0.0;
-        // sLoose.volume = 0.0;
-        // sTictac.volume = 0.0;
-        // sLouper.volume = 0.0;
-        audio.volume = 0.0;
-
-      } else {
-        audio.volume = 0.3;
-        // sRonflements.volume = 0.5;
-        // sWin.volume = 0.3;
-        // sLoose.volume = 0.4;
-        // sTictac.volume = 0.8;
-        // sLouper.volume = 1.0;
-      }
-    }
-
-    /******************/
-    /***** SOUNDS *****/
-    /******************/
-
-    // setDefaultVolume(true);
-
-    // var toggleMute = function () {
-    //   if (mute) {
-    //     muteButton.src = '10-mario-died.mp3';
-    //     return mute = false;
-    //   } else {
-    //     muteButton.src = '10-mario-died.mp3';
-    //     return mute = true;
-    //   }
-    // };
-
-
 
     // 
     containerLuigi.style.display = "none"
@@ -180,8 +154,9 @@ window.addEventListener("DOMContentLoaded", function () {
         vie3.style.display = "none";
         vie4 = document.getElementById("vieMario4");
         vie4.style.display = "none";
-        keybordGame = document.getElementById("keybordGame");
-        keybordGame.style.display = "none";
+        // activation = false;
+        gestionSonPiece = false;
+        // sonPrincipal();
       }
     };
 
@@ -190,7 +165,7 @@ window.addEventListener("DOMContentLoaded", function () {
       if (sautOn == false) {
         // console.log("B");
 
-        IntervalmouvementSaut = window.setInterval(sautMario, 10);
+        IntervalmouvementSaut = window.setInterval(sautMario, 0);
         sautOn = true;
       }
     };
@@ -549,6 +524,8 @@ window.addEventListener("DOMContentLoaded", function () {
         Etoile.style.display = "block";
         var toad = document.getElementById("toad");
         toad.style.display = "block";
+        gestionSonPiece = false;
+
 
       }
     };
