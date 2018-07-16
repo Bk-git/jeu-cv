@@ -20,7 +20,9 @@ window.addEventListener("DOMContentLoaded", function () {
     var audioChoixMario = new Audio("itsmeMario.mp3");
     audioChoixMario.pause();
     audioChoixMario.currentTime = 0;
+    audioChoixMario.volume = 0.02;
     audioChoixMario.play();
+
   };
 
 
@@ -29,6 +31,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var audio = new Audio("piece.wav");
     audio.pause();
     audio.currentTime = 0;
+    audio.volume = 0.01;
     audio.play();
   };
 
