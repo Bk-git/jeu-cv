@@ -109,16 +109,14 @@ body {
 
 
 
-
-
-
-#monCv {
+/* #monCv {
   background-image: url("MonCv.pdf");
   width: 200px;
   margin: 200px auto;
   height: 200px;
   position: relative;
-}
+} */
+
 #toad {
  position: absolute;
     overflow: hidden;
