@@ -6,13 +6,11 @@ window.addEventListener("DOMContentLoaded", function () {
   var clickMario = document.getElementById("choixPersonnageMario").addEventListener("click", Mario);
 
 
-  // var sonPrincipal = function () {
-  //   var audio1 = new Audio("OverWorldMario.mp3");
-  //   console.log('audioprincipale fonctionne')
-  //   audio1.pause();
-  //   // audio1.currentTime = 0;
-  //   // audio1.play();
-  // }
+
+
+
+
+
 
 
   var gestionSonChoixMario = function () {
@@ -71,6 +69,7 @@ window.addEventListener("DOMContentLoaded", function () {
     var limiteZoneDeJeuDroit = 972;
     var limiteZoneDeJeuGauche = 0;
     var deplacementOff = 0;
+    var deplacementDroit = 2;   
     // "drapeaux" de gestion d'appui des touches
     var gaucheEnfoncee = false;
     var droiteEnfoncee = false;
@@ -80,6 +79,26 @@ window.addEventListener("DOMContentLoaded", function () {
     var espaceEnfonce = false;
     var sautOn = false; // validation du saut
     var IntervalmouvementSaut;
+
+
+    var objetTubeVert = {
+      id: tubeVert = document.getElementById("tubeVert"),
+      width: tubeVert.style.width = "54px",
+      height: tubeVert.style.height = "57px",
+      left: tubeVert.style.left = "644px",
+      top: tubeVert.style.top = "295px",
+      position: tubeVert.style.position = "absolute",
+      color: tubeVert.style.backgroundColor = "green",
+      overFlow: tubeVert.style.overflow = "hidden",
+      display: tubeVert.style.display = "block",
+
+    }
+    console.log(objetTubeVert.id);
+
+
+
+
+
 
     var sautMario = function () {
       // console.log("saut");
@@ -215,6 +234,9 @@ window.addEventListener("DOMContentLoaded", function () {
         masqueX = masqueX + deplacementDroit; // + par rapport a left
         masqueContainer.style.left = masqueX + "px";
       }
+
+
+
       // var tuberVert = {
       //     width: 50,
       //     heigth: 50,

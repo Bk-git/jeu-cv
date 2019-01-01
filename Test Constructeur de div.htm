@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/Kemal/Desktop/testConstructeur.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test Constructeur de div</title>
+<script type="text/javascript">
+
+
+    //Au chargement du document
+    window.addEventListener('DOMContentLoaded', function () {
+
+
+
+        var HTMLpElement = window.document.getElementById('clickable-element');
+        var container = window.document.getElementById('container');
+        var activeCarre = false;
+        var carre = document.createElement("div");
+        carre.style.width = "50px";
+        carre.style.height = "50px";
+        carre.style.position = "absolute";
+        carre.style.backgroundColor = "aquamarine";
+        carre.id = Math.floor(Math.random() * 500);
+        container.appendChild(carre);// appendchild sert a accrocjer me carre a la div container
+
+
+        const rihoue = {
+        	recupDivRihoue : divRihoue = document.getElementById('rihoue'), 
+        	color : divRihoue.style.color = 'red', 
+
+        }
+
+
+
+        // création d'une DIV ENNEMI CONSTRUCTEUR; FUNCTION CONSTRUCTRICE
+
+        // 
+
+        var ObjetEnnemi1 = {
+            recupDiv1: divEnnemi = document.getElementById('ennemi'),
+            activeDivEnnemi: false,
+            Ennemis: divEnnemi.style.backgroundColor = "red",
+            top: divEnnemi.style.top = "321px",
+            left: divEnnemi.style.left = "200px",
+            width: divEnnemi.style.width = "12px",
+            height: divEnnemi.style.height = "200px",
+            position: divEnnemi.style.position = "absolute",
+            mouvement: divEnnemi.style.animation = "alternate"
+
+        };
+
+        var ObjetEnnemi2 = {
+            myFunction: deplacementAuto = function () { },
+            recupDiv2: divEnnemi2 = document.getElementById('ennemi2'),
+            activeDivEnnemi: false,
+            Ennemis: divEnnemi2.style.backgroundColor = "green",
+            top: divEnnemi2.style.top = "321px",
+            left: divEnnemi2.style.left = "400px",
+            width: divEnnemi2.style.width = "12px",
+            height: divEnnemi2.style.height = "200px",
+            position: divEnnemi2.style.position = "absolute",
+
+
+        };
+
+
+
+
+
+
+
+        var ConstructeurDennemies = function () {
+            this.id = mechantID = document.getElementById('containerDiVrandom');
+            this.creation = mechant = document.createElement("div");
+            this.creationID = mechantID.appendChild(mechant);
+
+            this.color = mechantID.style.backgroundColor = 'blue';
+            this.width = mechantID.style.width = '12px';
+            this.height = mechantID.style.height = '200px';
+            this.posit = mechantID.style.position = 'absolute';
+            this.top = mechantID.style.top = '321px';
+            this.left = mechantID.style.left = '600px';
+            this.fonction = function () { console.log('ConstructeurEnnemis!'); };
+
+        }
+        ConstructeurDennemies();
+        var Mime = function () { };
+
+        ConstructeurDennemies.prototype = new Mime();
+        console.log();
+
+        // var Mime = function (nom) {
+        //     this.nom = nom;
+        //     this.peutParler = false;
+        // };
+        // Mime.prototype = new Personne();
+        // var mime = new Mime('Mime');
+
+
+
+
+
+
+
+        // Constructeur de retangle 
+
+        function ConstructeurRectangle(divRectangle, color, top, left) {
+            // this.activeDivEnnemi = true;
+            this.color = color;
+            this.width = divRectangle.style.width = '12px';
+            this.height = divRectangle.style.height = '200px';
+            this.posit = divRectangle.style.position = 'absolute';
+            this.top = top;
+            this.left = left;
+            // this.cool = divRectangle = document.getElementById('containerDiVrandom2');
+
+            // console.log('constructeurRectangle !');
+            // this.creation = document.createElement("div");
+        }
+        var rect1 = function () {
+            this.height = divRectangle.style.height = '200px';
+            this.posit = divRectangle.style.position = 'absolute';
+            this.top = divRectangle.style.top = '700px';
+            this.left = divRectangle.style.left = ' 20px';
+        };
+        var rect = function () {
+            // this.activeDivEnnemi = true;
+            this.width = divRectangle.style.width = '12px';
+            this.height = divRectangle.style.height = '400px';
+            this.posit = divRectangle.style.position = 'absolute';
+        };
+        var divRectangle = document.getElementById('containerDiVrandom2');
+        var color = divRectangle.style.backgroundColor = 'pink';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '800px';
+        ConstructeurRectangle.prototype = new rect(divRectangle, color, top, left);
+
+        ConstructeurRectangle.prototype = new rect1();
+
+
+
+        // rect black
+        var divRectangle = document.getElementById('ennemi4');
+        var color = divRectangle.style.backgroundColor = 'black';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '800px';
+
+        ConstructeurRectangle(divRectangle, color, top, left);
+        // rect purple
+        var divRectangle = document.getElementById('ennemi5');
+        var color = divRectangle.style.backgroundColor = 'purple';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '1000px';
+        ConstructeurRectangle(divRectangle, color, top, left);
+        // rect green 
+
+        var divRectangle = document.getElementById('ennemi6');
+        var color = divRectangle.style.backgroundColor = 'green';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '1200px';
+
+        ConstructeurRectangle(divRectangle, color, top, left);
+
+
+        var divRectangle = document.getElementById('ennemi7');
+        var color = divRectangle.style.backgroundColor = 'gold';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '1200px';
+
+        ConstructeurRectangle(divRectangle, color, top, left);
+
+        var divRectangle = document.getElementById('ennemi8');
+        var color = divRectangle.style.backgroundColor = 'brown';
+        var top = divRectangle.style.top = '321px';
+        var left = divRectangle.style.left = '1400px';
+
+        ConstructeurRectangle(divRectangle, color, top, left);
+
+
+
+
+
+
+        var sacAdos = {
+            poche1: newDiv = document.createElement("div"),
+            poche10: container3 = document.getElementById("containerDiVrandom2"),
+            poche2: newDiv.style.width = "100px",
+            poche3: newDiv.style.height = "100px",
+            pocheETDEMI: newDiv.style.left = "100px",
+            pocheETDEMI2: newDiv.style.top = "321px",
+            poche4: newDiv.style.position = "absolute",
+            poche5: newDiv.style.backgroundColor = "aquamarine",
+            pochederattachement: container3.appendChild(newDiv)
+
+
+
+        }
+
+
+        var sacAdos2 = {
+            poche1: newDiv = document.createElement("div"),
+            poche10: container3 = document.getElementById("containerDiVrandom2"),
+            poche2: newDiv.style.width = "100px",
+            poche3: newDiv.style.height = "100px",
+            pocheETDEMI: newDiv.style.left = "100px",
+            pocheETDEMI2: newDiv.style.top = "521px",
+            poche4: newDiv.style.position = "absolute",
+            poche5: newDiv.style.backgroundColor = "black",
+            pochederattachement: container3.appendChild(newDiv)
+        };
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script></head>
+<!-- Chargement du "framework" client socket.io -->
+<!--
+    Coté serveur, si on utilise le module socket.io, le serveur se voit automatiquement attribué un
+    gestionnaire d'événement pour la route : /socket.io/socket.io.js ( le fichier étant réellement
+    situé coté serveur dans le dossier : \node_modules\socket.io\node_modules\socket.io-client )
+  -->
+
+
+<body>
+    <h1>Test Constructeur de div </h1>
+    <p id="clickable-element">Déplacer le carré</p>
+    <div id="container"><div id="27" style="width: 50px; height: 50px; position: absolute; background-color: aquamarine;"></div></div>
+    <div id="ennemi" style="background-color: red; top: 321px; left: 200px; width: 12px; height: 200px; position: absolute; animation: alternate;"></div>
+    <div id="ennemi2" style="background-color: green; top: 321px; left: 400px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="ennemi3"></div>
+    <div id="ennemi4" style="background-color: black; top: 321px; left: 800px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="ennemi5" style="background-color: purple; top: 321px; left: 1000px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="ennemi6" style="background-color: green; top: 321px; left: 1200px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="ennemi7" style="background-color: gold; top: 321px; left: 1200px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="ennemi8" style="background-color: brown; top: 321px; left: 1400px; width: 12px; height: 200px; position: absolute;"></div>
+    <div id="containerDiVrandom" style="background-color: blue; width: 12px; height: 200px; position: absolute; top: 321px; left: 600px;"><div></div></div>
+    <div id="containerDiVrandom2" style="background-color: pink; top: 700px; left: 20px; width: 12px; height: 200px; position: absolute;"><div style="width: 100px; height: 100px; left: 100px; top: 321px; position: absolute; background-color: aquamarine;"></div><div style="width: 100px; height: 100px; left: 100px; top: 521px; position: absolute; background-color: black;"></div></div>
+
+
+
+</body></html>

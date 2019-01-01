@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-  
+
   var test = false;
   var MouvementSpriteBowser = function () {
     var masqueDeBowser = document.getElementById("MasqueDeBowser");
@@ -371,9 +371,7 @@ window.addEventListener("DOMContentLoaded", function () {
         compteurIndexTableauDeplacement = 0;
       }
       masqueDeBowser.style.width =
-        that.mouvementspriteGauche.deplacementGauche[
-          compteurIndexTableauDeplacement
-        ].largeurDuMasque;
+        that.mouvementspriteGauche.deplacementGauche[compteurIndexTableauDeplacement].largeurDuMasque;
 
       masqueDeBowser.style.height =
         that.mouvementspriteGauche.deplacementGauche[
@@ -488,15 +486,14 @@ window.addEventListener("DOMContentLoaded", function () {
   };
 
   var bowser = new MouvementSpriteBowser();
-
   var containerLuigi = document.getElementById("containerLuigi")
   var container = document.getElementById("container")
 
 
 
 
-  testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement // 
 
+   testinterval = setInterval(bowser.mouvementBowserXY, 20); // 20 idéalement // 
 
 
 

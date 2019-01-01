@@ -393,7 +393,7 @@ body {
 
 #son {
   top: 0px;
-  left: 1140px;
+  left: 700px;
   position: absolute;
 }
 
@@ -422,6 +422,7 @@ h2{
   position:absolute;
   color: red;
   text-shadow: -5px -5px 5px black;
+  width: 20%;
   /* font-size: 25px ;  */
   left:300px;
   top:630px; 
