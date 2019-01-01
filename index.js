@@ -8,11 +8,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
-
   var gestionSonChoixMario = function () {
 
     var audioChoixMario = new Audio("itsmeMario.mp3");
@@ -81,19 +76,19 @@ window.addEventListener("DOMContentLoaded", function () {
     var IntervalmouvementSaut;
 
 
-    var objetTubeVert = {
-      id: tubeVert = document.getElementById("tubeVert"),
-      width: tubeVert.style.width = "54px",
-      height: tubeVert.style.height = "57px",
-      left: tubeVert.style.left = "644px",
-      top: tubeVert.style.top = "295px",
-      position: tubeVert.style.position = "absolute",
-      color: tubeVert.style.backgroundColor = "green",
-      overFlow: tubeVert.style.overflow = "hidden",
-      display: tubeVert.style.display = "block",
+    // var objetTubeVert = {
+    //   id: tubeVert = document.getElementById("tubeVert"),
+    //   width: tubeVert.style.width = "54px",
+    //   height: tubeVert.style.height = "57px",
+    //   left: tubeVert.style.left = "644px",
+    //   top: tubeVert.style.top = "295px",
+    //   position: tubeVert.style.position = "absolute",
+    //   color: tubeVert.style.backgroundColor = "green",
+    //   overFlow: tubeVert.style.overflow = "hidden",
+    //   display: tubeVert.style.display = "block",
 
-    }
-    console.log(objetTubeVert.id);
+    // }
+    // console.log(objetTubeVert.id);
 
 
 
